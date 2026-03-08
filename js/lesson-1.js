@@ -7,15 +7,15 @@
 // Підказка: prompt завжди повертає рядок (String), тому перед перевіркою
 // перетворіть значення на число за допомогою Number().
 
-const number = Number(prompt("fed"));
+// const number = Number(prompt("fed"));
 
-if (number === 10) {
-  alert("complete");
-} else {
-  alert("not completed");
-}
+// if (number === 10) {
+//   alert("complete");
+// } else {
+//   alert("not completed");
+// }
 
-alert(number === 10 ? "yes" : "no");
+// alert(number === 10 ? "yes" : "no");
 
 // -------------------------------------------------------------------------------- 2
 
@@ -25,20 +25,20 @@ alert(number === 10 ? "yes" : "no");
 // Виведіть в alert відповідне повідомлення, наприклад:
 // "10 входить в першу чверть"
 
-const min = Math.floor(Math.random() * 59);
-const min = Number(prompt("wf"));
+// const min = Math.floor(Math.random() * 59);
+// const min = Number(prompt("wf"));
 
-if (min >= 45 && min < 60) {
-  alert(`${min} 4 in 4`);
-} else if (min >= 30 && min < 45) {
-  alert(`${min} 3 in 4`);
-} else if (min >= 15 && min < 30) {
-  alert(`${min} 2 in 4`);
-} else if (min >= 0 && min < 15) {
-  alert(`${min} 1 in 4`);
-} else {
-  alert("ERROR");
-}
+// if (min >= 45 && min < 60) {
+//   alert(`${min} 4 in 4`);
+// } else if (min >= 30 && min < 45) {
+//   alert(`${min} 3 in 4`);
+// } else if (min >= 15 && min < 30) {
+//   alert(`${min} 2 in 4`);
+// } else if (min >= 0 && min < 15) {
+//   alert(`${min} 1 in 4`);
+// } else {
+//   alert("ERROR");
+// }
 
 // ------------------------------------------------------------------3
 
@@ -52,30 +52,30 @@ if (min >= 45 && min < 60) {
 // "Вибачте, але ви маєте ввести значення від 1 до 4 включно".
 // Значення змінної result виведіть в консоль.
 
-const num = Number(prompt("number?"));
+// const num = Number(prompt("number?"));
 
-let result = "";
+// let result = "";
 
-switch (num) {
-  case 1:
-    result = "winter";
-    break;
-  case 2:
-    result = "spring";
-    break;
-  case 3:
-    result = "summer";
-    break;
-  case 4:
-    result = "autumn";
-    break;
+// switch (num) {
+//   case 1:
+//     result = "winter";
+//     break;
+//   case 2:
+//     result = "spring";
+//     break;
+//   case 3:
+//     result = "summer";
+//     break;
+//   case 4:
+//     result = "autumn";
+//     break;
 
-  default:
-    result = "Вибачте, але ви маєте ввести значення від 1 до 4 включно";
-}
+//   default:
+//     result = "Вибачте, але ви маєте ввести значення від 1 до 4 включно";
+// }
 
-alert(result);
-console.log(result);
+// alert(result);
+// console.log(result);
 
 // ---------------------------------------------------------------------4
 
@@ -85,19 +85,19 @@ console.log(result);
 // Корисне посилання для відображення годин та хвилин у потрібному форматі ('01' замість '1'):
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart#examples
 
-const minutes = Number(prompt("кількість хвилин"));
+// const minutes = Number(prompt("кількість хвилин"));
 
-function minInHours(minutes) {
-  const hours = Math.floor(minutes / 60);
-  const remainingMinutes = minutes % 60;
+// function minInHours(minutes) {
+//   const hours = Math.floor(minutes / 60);
+//   const remainingMinutes = minutes % 60;
 
-  const formattedHours = String(hours).padStart(2, "0");
-  const formattedMinutes = String(remainingMinutes).padStart(2, "0");
+//   const formattedHours = String(hours).padStart(2, "0");
+//   const formattedMinutes = String(remainingMinutes).padStart(2, "0");
 
-  return `${formattedHours}:${formattedMinutes}`;
-}
+//   return `${formattedHours}:${formattedMinutes}`;
+// }
 
-console.log(minInHours(minutes));
+// console.log(minInHours(minutes));
 
 // ----------------------------------------------------------------------5
 
@@ -116,32 +116,32 @@ console.log(minInHours(minutes));
 // то вивести в alert рядок "Добрий день!",
 // в іншому випадку вивести в alert рядок "Невірний пароль!"
 
-const login = prompt("логін");
-const lowLogin = login.toLowerCase();
-console.log(login);
-alert(`${login}, Hi!`);
+// const login = prompt("логін");
+// const lowLogin = login.toLowerCase();
+// console.log(login);
+// alert(`${login}, Hi!`);
 
-if (lowLogin === "admin") {
-  const password = prompt("password");
-  if (password === "admin") {
-    alert("Hello, Admin");
-  } else {
-    alert("Incorect password!!!");
-  }
-} else {
-  alert(`I dont know you, ${login}`);
-}
+// if (lowLogin === "admin") {
+//   const password = prompt("password");
+//   if (password === "admin") {
+//     alert("Hello, Admin");
+//   } else {
+//     alert("Incorect password!!!");
+//   }
+// } else {
+//   alert(`I dont know you, ${login}`);
+// }
 
 // ------------------------------------------------------------------------6
 
-let num = 0;
+// let num = 0;
 
-const maxNum = 20;
+// const maxNum = 20;
 
-while (num <= maxNum) {
-  console.log(num);
-  num += 1;
-}
+// while (num <= maxNum) {
+//   console.log(num);
+//   num += 1;
+// }
 
 // ----------------------------------------------------------------------------7
 
@@ -152,31 +152,31 @@ while (num <= maxNum) {
 // Кроме того, подсчитайте сумму всех четных чисел в этом цикле
 // и верните ее из функции.
 
-function getNumbers(min, max) {
-  let num = [];
-  for (let i = max; i >= min; i--) {
-    num.push(i);
-  }
+// function getNumbers(min, max) {
+//   let num = [];
+//   for (let i = max; i >= min; i--) {
+//     num.push(i);
+//   }
 
-  let sum = 0;
+//   let sum = 0;
 
-  for (let i = 0; i < num.length; i++) {
-    if (num[i] % 2 === 0) {
-      sum += num[i];
-    }
-  }
+//   for (let i = 0; i < num.length; i++) {
+//     if (num[i] % 2 === 0) {
+//       sum += num[i];
+//     }
+//   }
 
-  return num;
+//   return num;
 
-  return [num, sum];
+//   return [num, sum];
 
-  return {
-    num: num,
-    sum: sum,
-  };
-}
+//   return {
+//     num: num,
+//     sum: sum,
+//   };
+// }
 
-console.log(getNumbers(10, 15));
+// console.log(getNumbers(10, 15));
 
 // ----------------------------------------------------------------------8
 
@@ -184,67 +184,67 @@ console.log(getNumbers(10, 15));
 // Нужно добавить проверку, что функция получает именно числа, в противном случае
 // возвращать из функции строку – 'Not a number!' .
 
-function min(a, b) {
-  if (a < b) {
-    return a;
-  } else if (b < a) {
-    return b;
-  } else if (a === b) {
-    return `${a} = ${b}`;
-  } else {
-    return "Not a number!";
-  }
-}
+// function min(a, b) {
+//   if (a < b) {
+//     return a;
+//   } else if (b < a) {
+//     return b;
+//   } else if (a === b) {
+//     return `${a} = ${b}`;
+//   } else {
+//     return "Not a number!";
+//   }
+// }
 
-console.log(min(25, 64));
-console.log(min(145, 64));
-console.log(min(64, 64));
-console.log(min(false, 64));
-console.log(min("false", 64));
-console.log(min("5", 64));
+// console.log(min(25, 64));
+// console.log(min(145, 64));
+// console.log(min(64, 64));
+// console.log(min(false, 64));
+// console.log(min("false", 64));
+// console.log(min("5", 64));
 
 // ------------------------------------------------------9
 
-function isAdult(age) {
-  if (age >= 18) {
-    return true;
-  } else {
-    return confirm("You are under 18. Do you have permission?");
-  }
-}
+// function isAdult(age) {
+//   if (age >= 18) {
+//     return true;
+//   } else {
+//     return confirm("You are under 18. Do you have permission?");
+//   }
+// }
 
-console.log(isAdult(25));
-console.log(isAdult(18));
-console.log(isAdult(6));
-console.log(isAdult(false));
+// console.log(isAdult(25));
+// console.log(isAdult(18));
+// console.log(isAdult(6));
+// console.log(isAdult(false));
 
-const age = prompt("Your age");
+// const age = prompt("Your age");
 
-if (age >= 18) {
-  alert(true);
-} else {
-  confirm("You are under 18. Do you have permission?");
-  alert(false);
-}
+// if (age >= 18) {
+//   alert(true);
+// } else {
+//   confirm("You are under 18. Do you have permission?");
+//   alert(false);
+// }
 
 // -----------------------------------------------------10
 
-function fizzBuzz(num) {
-  for (let i = 1; i < num; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log("fizzbuzz");
-    } else if (i % 5 === 0) {
-      console.log("buzz");
-    } else if (i % 3 === 0) {
-      console.log("fizz");
-    }
-  }
-  return;
-}
+// console.log(fizzBuzz(65));
+// console.log(fizzBuzz(9));
+// console.log(fizzBuzz(16));
+// console.log(fizzBuzz(45));
+// console.log(fizzBuzz(100));
+// console.log(fizzBuzz(true));
 
-console.log(fizzBuzz(65));
-console.log(fizzBuzz(9));
-console.log(fizzBuzz(16));
-console.log(fizzBuzz(45));
-console.log(fizzBuzz(100));
-console.log(fizzBuzz(true));
+// function fizzBuzz(num) {
+//   for (let i = 1; i < num; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       console.log("fizzbuzz");
+//     } else if (i % 5 === 0) {
+//       console.log("buzz");
+//     } else if (i % 3 === 0) {
+//       console.log("fizz");
+//     }
+//   }
+//   return;
+// }
