@@ -4,7 +4,9 @@
 
 // styles.push("rock-n-roll");
 
-// styles[1] = "classic";
+// const index = styles.indexOf("blues");
+
+// styles[index] = "classic";
 
 // function logItems(array) {
 //   let elementNumber = 0;
@@ -180,3 +182,47 @@
 // console.log(calcTotalPrice(fruits, "Банан"));
 
 // console.log(calcTotalPrice(fruits, "Манго"));
+
+// _________________________________TASK 11___________________________
+
+const phonebook = {
+
+  contacts: [],
+
+
+
+      getDate() {},
+  add(data) {
+const {
+   name,
+    email,
+     category = default,
+      id: generateId() {
+        let idContact = 1;
+        idContact += 1;
+      },
+      createdAt ,
+} = data;
+if (!name || !email) {
+    return "ERROR!"
+} else if (this.contacts.email.includes(data.email)) {
+    return "This email is allredy recorded"
+} else {
+
+    this.contacts.push(data);
+}
+    
+  },
+  
+  list() {},
+  filtered(category) {},
+  delete(name) {
+    if (this.contacts.name === name) {
+
+    }
+  },
+  updateName(oldName, newName) {
+
+    this.contacts.name.includes(oldName) = newName;
+  },
+};
