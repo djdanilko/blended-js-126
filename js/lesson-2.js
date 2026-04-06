@@ -185,44 +185,83 @@
 
 // _________________________________TASK 11___________________________
 
-const phonebook = {
+// const phonebook = {
+//   contacts: [],
+//   add(data) {
+//     if (!data.name || !data.email) {
+//       console.log("ERROR no name or email!");
+//       return;
+//     }
 
-  contacts: [],
+//     const exists = this.contacts.some(
+//       (contact) => contact.name === data.name || contact.email === data.email,
+//     );
 
+//     if (exists) {
+//       console.log("Contact already exists!");
+//       return;
+//     }
 
+//     data.id = this.generateId();
+//     data.createdAt = this.getDate();
+//     data.category = data.category || "default";
 
-      getDate() {},
-  add(data) {
-const {
-   name,
-    email,
-     category = default,
-      id: generateId() {
-        let idContact = 1;
-        idContact += 1;
-      },
-      createdAt ,
-} = data;
-if (!name || !email) {
-    return "ERROR!"
-} else if (this.contacts.email.includes(data.email)) {
-    return "This email is allredy recorded"
-} else {
+//     this.contacts.push(data);
+//   },
+//   list() {
+//     return this.contacts;
+//   },
+//   filtered(category) {
+//     return this.contacts.filter((contact) => contact.category === category);
+//   },
+//   delete(name) {
+//     this.contacts = this.contacts.filter((contact) => contact.name !== name);
+//   },
 
-    this.contacts.push(data);
-}
-    
-  },
-  
-  list() {},
-  filtered(category) {},
-  delete(name) {
-    if (this.contacts.name === name) {
+//   updateName(oldName, newName) {
+//     const contact = this.contacts.find((contact) => contact.name === oldName);
 
-    }
-  },
-  updateName(oldName, newName) {
+//     if (contact) {
+//       contact.name = newName;
+//     } else {
+//       console.log("Contact not found");
+//     }
+//   },
 
-    this.contacts.name.includes(oldName) = newName;
-  },
-};
+//   generateId() {
+//     return "#" + Math.random().toString(36).substr(2, 9);
+//   },
+//   getDate() {
+//     return Date.now();
+//   },
+// };
+
+// phonebook.add({
+//   name: "Mango",
+//   email: "mango@mail.com",
+//   category: "friends",
+// });
+
+// phonebook.add({
+//   name: "Poly",
+//   email: "poly@hotmail.com",
+// });
+// phonebook.add({
+//   name: "Katy",
+//   email: "katy@hotmail.com",
+//   category: "friends",
+// });
+// phonebook.delete("Mango");
+// phonebook.updateName("Poly", "Sara");
+// console.log(phonebook.filtered("friends"));
+// phonebook.list();
+
+// function squareSum(numbers) {
+//   let sum = 0;
+//   for (let i = 0; i < numbers.length; i++) {
+//     sum += numbers[i] ** 2;
+//   }
+//   return sum;
+// }
+
+// console.log(squareSum([0, 3, 4, 5]));
